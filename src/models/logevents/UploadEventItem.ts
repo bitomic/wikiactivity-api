@@ -1,5 +1,5 @@
 import { LogEventsItem } from './LogEventsItem'
-import type { LogEventsResponse } from '../types'
+import type { LogEventsResponse } from '../../types'
 
 export class UploadEventItem<Action extends 'upload' | 'overwrite' | 'revert'> extends LogEventsItem<'upload', Action> {
 	public constructor( data: LogEventsResponse ) {

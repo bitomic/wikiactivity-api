@@ -1,5 +1,5 @@
-import { ActivityItem, ActivityType } from './ActivityItem'
-import type { LogAction, LogEventParameters, LogEventsResponse, LogType } from '../types'
+import { ActivityItem, ActivityType } from '../ActivityItem'
+import type { LogAction, LogEventParameters, LogEventsResponse, LogType } from '../../types'
 import { BlockEventItem } from './BlockEventItem'
 import { DeleteEventItem } from './DeleteEventItem'
 import { MoveEventItem } from './MoveEventItem'

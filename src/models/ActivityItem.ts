@@ -1,4 +1,4 @@
-import type { RecentChangesItem } from './RecentChangesItem'
+import type { RecentChangesItem } from './recentchanges'
 
 export enum ActivityType {
 	LOGEVENTS,

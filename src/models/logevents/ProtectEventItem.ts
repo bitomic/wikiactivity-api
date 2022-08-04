@@ -1,5 +1,5 @@
 import { LogEventsItem } from './LogEventsItem'
-import type { LogEventsResponse } from '../types'
+import type { LogEventsResponse } from '../../types'
 
 export class ProtectEventItem<Action extends 'protect' | 'modify' | 'unprotect'> extends LogEventsItem<'protect', Action> {
 	public constructor( data: LogEventsResponse ) {

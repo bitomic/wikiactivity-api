@@ -1,5 +1,5 @@
-import { ActivityItem, ActivityType } from './ActivityItem'
-import type { RecentChangesResponse } from '../types'
+import { ActivityItem, ActivityType } from '../ActivityItem'
+import type { RecentChangesResponse } from '../../types'
 
 export class RecentChangesItem extends ActivityItem implements RecentChangesResponse {
 	protected _type = ActivityType.RECENTCHANGES

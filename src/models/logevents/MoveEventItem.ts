@@ -1,5 +1,5 @@
 import { LogEventsItem } from './LogEventsItem'
-import type { LogEventsResponse } from '../types'
+import type { LogEventsResponse } from '../../types'
 
 export class MoveEventItem extends LogEventsItem<'move', 'move'> {
 	public constructor( data: LogEventsResponse ) {

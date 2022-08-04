@@ -1,5 +1,5 @@
 import { LogEventsItem } from './LogEventsItem'
-import type { LogEventsResponse } from '../types'
+import type { LogEventsResponse } from '../../types'
 
 export class DeleteEventItem<Action extends 'delete' | 'restore'> extends LogEventsItem<'delete', Action> {
 	public constructor( data: LogEventsResponse ) {

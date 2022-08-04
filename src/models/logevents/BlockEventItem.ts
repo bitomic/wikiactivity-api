@@ -1,5 +1,5 @@
 import { LogEventsItem } from './LogEventsItem'
-import type { LogEventsResponse } from '../types'
+import type { LogEventsResponse } from '../../types'
 
 export class BlockEventItem<Action extends 'block' | 'reblock' | 'unblock'> extends LogEventsItem<'block', Action> {
 	public constructor( data: LogEventsResponse ) {
