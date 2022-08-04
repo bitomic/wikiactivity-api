@@ -56,6 +56,7 @@ __metadata:
     rimraf: ^3.0.2
     ts-dotenv: ^0.8.3
     typescript: ^4.7.4
+    undici: ^5.8.1
   languageName: unknown
   linkType: soft
 
@@ -2134,7 +2135,7 @@ __metadata:
     node-fetch: 2.6.7
     tmp-promise: ^3.0.3
     tough-cookie: ^4.0.0
-  checksum: caa98a8c6711740a55f7f7c72ae7d33834716eeaacaa9237df6b7a4913fc96bf80fa09f15e7181b74452db7be6c8b643013093a7b26caf2af96e1ead65443f33
+  checksum: 793e8dbcbc59d738014d5ca1d7e20fe51b8fedf5dffc505784a6287f453f1f97fb22c12e0d604e033f9fb6645ace7aef651e3149ab54b28c602d863b0ba5bade
   languageName: node
   linkType: hard
 
@@ -3084,6 +3085,13 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 9096d8f6c16cb80ef3bf96fcbbd055bf1c4a43bd14f3b7be45a9fbe7ada46ec977f604d5feed3263b4f2aa7d4c7477ce5f9cd87de0d6feedec69a983f3a4f93e
+  languageName: node
+  linkType: hard
+
+"undici@npm:^5.8.1":
+  version: 5.8.1
+  resolution: "undici@npm:5.8.1"
+  checksum: 0d5d8b9654f031a5490dcd89cd73db452ad51b06def08ce4ac07a1a46564cb6f039be4862bc013ec45b7ca465a468eb5c4caa761a26541958307f8d75878129a
   languageName: node
   linkType: hard
 
