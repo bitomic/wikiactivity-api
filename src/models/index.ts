@@ -1,3 +1,5 @@
 export * from './ActivityItem'
+export * from './Create'
+export * from './discussions'
 export * from './logevents'
 export * from './recentchanges'

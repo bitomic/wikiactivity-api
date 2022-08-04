@@ -1,3 +1,4 @@
+export * from './get-activity'
 export * from './get-discussions-activity'
 export * from './get-discussions-pages'
 export * from './get-logs'
