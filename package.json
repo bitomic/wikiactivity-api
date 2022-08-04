@@ -2,6 +2,7 @@
   "name": "@bitomic/wikiactivity-api",
   "version": "1.0.1",
   "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "author": "bitomic",
   "license": "MIT",
   "files": [
@@ -9,7 +10,7 @@
   ],
   "scripts": {
     "hooks": "husky install .github/husky",
-    "build": "rimraf tsconfig.tsbuildinfo dist && yarn tsc --listEmittedFiles --incremental",
+    "build": "rimraf tsconfig.tsbuildinfo dist && yarn tsc --listEmittedFiles --incremental --declaration",
     "build:watch": "yarn tsc -w --incremental",
     "lint": "eslint src/ --ext .ts --cache",
     "lint:fix": "eslint src/ --fix --ext .ts --cache",
