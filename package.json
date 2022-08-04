@@ -1,5 +1,5 @@
 {
-  "name": "yarn-template",
+  "name": "@bitomic/wikiactivity-api",
   "version": "1.0.0",
   "main": "dist/main.js",
   "author": "bitomic",
