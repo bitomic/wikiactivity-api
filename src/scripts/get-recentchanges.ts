@@ -19,7 +19,9 @@ export const getRecentChanges = async ( wiki: Required<FandomWiki>, from: Date, 
 		]
 	} )
 	for await ( const item of activity ) {
-		recentchanges.push( item as unknown as RecentChangesResponse )
+		const rc = item as unknown as RecentChangesResponse
+		rc.wiki = wiki.interwiki
+		recentchanges.push( rc )
 	}
 
 	return recentchanges

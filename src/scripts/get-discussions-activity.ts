@@ -25,6 +25,7 @@ export const getDiscussionsActivity = async ( wiki: Required<FandomWiki>, from: 
 		if ( post._embedded.thread[ 0 ].containerType === 'ARTICLE_COMMENT' ) {
 			const id = post._embedded.thread[ 0 ].containerId
 			post._embedded.thread[ 0 ].containerId = pagesByIds[ id ] ?? id
+			post.wiki = wiki.interwiki
 		}
 		return post
 	} )

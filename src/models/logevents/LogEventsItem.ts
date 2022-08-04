@@ -17,7 +17,7 @@ export class LogEventsItem<Type extends LogType = LogType, Action extends LogAct
 	public readonly params: LogEventParameters<Type, Action>
 
 	public constructor( data: LogEventsResponse ) {
-		super()
+		super( data.wiki )
 		this.logid = data.logid
 		this.ns = data.ns
 		this.title = data.title

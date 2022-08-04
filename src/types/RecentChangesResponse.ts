@@ -12,4 +12,5 @@ export interface RecentChangesResponse {
 	title: string
 	type: 'edit' | 'new'
 	user: string
+	wiki: string
 }

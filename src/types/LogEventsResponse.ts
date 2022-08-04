@@ -69,4 +69,5 @@ export interface LogEventsResponse<Type extends LogType = LogType, Action extend
 	timestamp: string
 	comment: string
 	params: LogEventParameters<Type, Action>
+	wiki: string
 }

@@ -19,7 +19,7 @@ export class RecentChangesItem extends ActivityItem implements RecentChangesResp
 	public readonly user: string
 
 	public constructor( data: RecentChangesResponse ) {
-		super()
+		super( data.wiki )
 		this.anon = data.anon ?? false
 		this.comment = data.comment
 		this.newlen = data.newlen

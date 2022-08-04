@@ -37,7 +37,7 @@ export abstract class DiscussionsItem extends ActivityItem implements Discussion
 	}
 
 	public constructor( data: DiscussionsPostResponse ) {
-		super()
+		super( data.wiki )
 		this.createdBy = data.createdBy
 		this.creationDate = data.creationDate
 		this.creatorId = data.creatorId

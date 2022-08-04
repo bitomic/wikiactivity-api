@@ -11,6 +11,15 @@ export enum ActivityType {
 export abstract class ActivityItem {
 	protected abstract _type: ActivityType
 
+	/**
+	 * Interwiki
+	 */
+	public readonly wiki: string
+
+	public constructor( wiki: string ) {
+		this.wiki = wiki
+	}
+
 	public isDiscussions(): this is DiscussionsItem {
 		return this._type === ActivityType.DISCUSSIONS
 	}

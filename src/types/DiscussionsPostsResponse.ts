@@ -27,6 +27,7 @@ export interface DiscussionsPostResponse {
 			}
 		]
 	}
+	wiki: string
 }
 
 export interface DiscussionsResponse {

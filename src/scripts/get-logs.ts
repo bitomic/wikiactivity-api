@@ -33,9 +33,13 @@ export const getLogEvents = async ( wiki: Required<FandomWiki>, from: Date, to: 
 		// letype: [ 'block', 'delete', 'move', 'protect', 'rights', 'upload' ],
 		list: 'logevents'
 	} )
+
 	for await ( const item of activity ) {
 		if ( !supportedTypes.has( `${ item.type }/${ item.action }` ) ) continue
-		logevents.push( item as unknown as LogEventsResponse )
+
+		const log = item as unknown as LogEventsResponse
+		log.wiki = wiki.interwiki
+		logevents.push( log )
 	}
 
 	return logevents
