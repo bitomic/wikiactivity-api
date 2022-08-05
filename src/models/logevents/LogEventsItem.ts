@@ -1,5 +1,10 @@
 import { ActivityItem, ActivityType } from '../ActivityItem'
 import type { LogAction, LogEventParameters, LogEventsResponse, LogType } from '../../types'
+import type { BlockEventItem } from './BlockEventItem'
+import type { MoveEventItem } from './MoveEventItem'
+import type { ProtectEventItem } from './ProtectEventItem'
+import type { RightsEventItem } from './RightsEventItem'
+import type { UploadEventItem } from './UploadEventItem'
 
 export class LogEventsItem<Type extends LogType = LogType, Action extends LogAction = LogAction> extends ActivityItem implements LogEventsResponse<Type, Action> {
 	protected _type = ActivityType.LOGEVENTS
@@ -38,23 +43,23 @@ export class LogEventsItem<Type extends LogType = LogType, Action extends LogAct
 		return new Date( this.timestamp )
 	}
 
-	public isBlock(): this is LogEventsItem<'block', LogAction> {
+	public isBlock(): this is BlockEventItem<'block' | 'reblock' | 'unblock'> {
 		return this.type === 'block'
 	}
 
-	public isMove(): this is LogEventsItem<'move', LogAction> {
+	public isMove(): this is MoveEventItem {
 		return this.type === 'move'
 	}
 
-	public isProtect(): this is LogEventsItem<'protect', LogAction> {
+	public isProtect(): this is ProtectEventItem<'modify' | 'protect' | 'unprotect'> {
 		return this.type === 'protect'
 	}
 
-	public isRights(): this is LogEventsItem<'rights', LogAction> {
+	public isRights(): this is RightsEventItem {
 		return this.type === 'rights'
 	}
 
-	public isUpload(): this is LogEventsItem<'upload', LogAction> {
+	public isUpload(): this is UploadEventItem<'overwrite' | 'revert' | 'upload'> {
 		return this.type === 'upload'
 	}
 }
