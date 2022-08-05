@@ -1,6 +1,7 @@
 import { ActivityItem, ActivityType } from '../ActivityItem'
 import type { LogAction, LogEventParameters, LogEventsResponse, LogType } from '../../types'
 import type { BlockEventItem } from './BlockEventItem'
+import type { DeleteEventItem } from './DeleteEventItem'
 import type { MoveEventItem } from './MoveEventItem'
 import type { ProtectEventItem } from './ProtectEventItem'
 import type { RightsEventItem } from './RightsEventItem'
@@ -45,6 +46,10 @@ export class LogEventsItem<Type extends LogType = LogType, Action extends LogAct
 
 	public isBlock(): this is BlockEventItem<'block' | 'reblock' | 'unblock'> {
 		return this.type === 'block'
+	}
+
+	public isDelete(): this is DeleteEventItem<'delete' | 'restore'> {
+		return this.type === 'delete'
 	}
 
 	public isMove(): this is MoveEventItem {
