@@ -9,6 +9,6 @@ export class CommentItem extends DiscussionsItem {
 	public getUrl( wiki: Required<FandomWiki> ): string {
 		let url = `${ wiki.server }${ wiki.scriptpath }/wiki/${ this.article }?commentId=${ this.threadId }`
 		if ( this.isReply ) url += `#${ this.id }`
-		return url
+		return url.replace( / /g, '_' )
 	}
 }
