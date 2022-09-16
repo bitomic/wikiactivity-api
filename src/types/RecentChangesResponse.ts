@@ -1,6 +1,8 @@
 export interface RecentChangesResponse {
 	anon?: boolean
 	comment: string
+	minor: boolean
+	new: boolean
 	newlen: number
 	ns: number
 	old_revid: number

@@ -6,6 +6,8 @@ export class RecentChangesItem extends ActivityItem implements RecentChangesResp
 
 	public readonly anon: boolean
 	public readonly comment: string
+	public readonly minor: boolean
+	public readonly new: boolean
 	public readonly newlen: number
 	public readonly ns: number
 	public readonly old_revid: number
@@ -22,6 +24,8 @@ export class RecentChangesItem extends ActivityItem implements RecentChangesResp
 		super( data.wiki )
 		this.anon = data.anon ?? false
 		this.comment = data.comment
+		this.minor = data.minor
+		this.new = data.new
 		this.newlen = data.newlen
 		this.ns = data.ns
 		this.old_revid = data.old_revid

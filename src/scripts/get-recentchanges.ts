@@ -10,7 +10,7 @@ export const getRecentChanges = async ( wiki: Required<FandomWiki>, from: Date, 
 		rcend: to.toISOString(),
 		rclimit: 'max',
 		rcprop: [
-			'comment', 'ids', 'redirect', 'sizes', 'timestamp', 'title', 'user'
+			'comment', 'ids', 'redirect', 'sizes', 'timestamp', 'title', 'user', 'flags'
 		],
 		rcshow: '!bot',
 		rcstart: from.toISOString(),
