@@ -33,7 +33,7 @@
   "dependencies": {
     "mw.js": "^2.4.1",
     "ts-dotenv": "^0.9.1",
-    "undici": "^5.20.0"
+    "undici": "^5.22.0"
   },
   "publishConfig": {
     "access": "public"
