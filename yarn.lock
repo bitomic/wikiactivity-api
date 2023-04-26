@@ -46,7 +46,7 @@ __metadata:
     "@bitomic/eslint-config": ^1.2.0
     "@commitlint/cli": ^17.4.4
     "@commitlint/config-conventional": ^17.4.4
-    "@types/node": ^18.14.0
+    "@types/node": ^18.16.1
     "@typescript-eslint/eslint-plugin": ^5.53.0
     "@typescript-eslint/parser": ^5.53.0
     eslint: ^8.34.0
@@ -408,10 +408,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.14.0":
-  version: 18.14.0
-  resolution: "@types/node@npm:18.14.0"
-  checksum: d83fcf5e4ed544755dd9028f5cbb6b9d46235043159111bb2ad62223729aee581c0144a9f6df8ba73d74011db9ed4ebd7af2fd5e0996714e3beb508a5da8ac5c
+"@types/node@npm:^18.16.1":
+  version: 18.16.1
+  resolution: "@types/node@npm:18.16.1"
+  checksum: 799026b949a48993cba7c9b81b2eabfdfb34c880744cb44c1c990fbedc9e315f3634d126eb2cf9a6e0795577c01016e2326d98565bef695ada9d363fadeb6946
   languageName: node
   linkType: hard
 
